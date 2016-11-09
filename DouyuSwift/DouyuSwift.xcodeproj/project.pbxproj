@@ -77,6 +77,7 @@
 		F91E5C881DD2F8D400E48AB7 /* DouyuSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F91E5CA91DD2FD4800E48AB7 /* Classes */,
 				F91E5C891DD2F8D400E48AB7 /* AppDelegate.swift */,
 				F91E5C8B1DD2F8D400E48AB7 /* ViewController.swift */,
 				F91E5C8D1DD2F8D400E48AB7 /* Main.storyboard */,
@@ -94,6 +95,205 @@
 				F91E5CA01DD2F8D400E48AB7 /* Info.plist */,
 			);
 			path = DouyuSwiftTests;
+			sourceTree = "<group>";
+		};
+		F91E5CA91DD2FD4800E48AB7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F91E5CB61DD2FD4800E48AB7 /* Main */,
+				F91E5CB21DD2FD4800E48AB7 /* Live */,
+				F91E5CAE1DD2FD4800E48AB7 /* Home */,
+				F91E5CAA1DD2FD4800E48AB7 /* Follow */,
+				F91E5CBA1DD2FD4800E48AB7 /* Profile */,
+				F91E5CBE1DD2FD4800E48AB7 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F91E5CAA1DD2FD4800E48AB7 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				F91E5CAB1DD2FD4800E48AB7 /* Controller */,
+				F91E5CAC1DD2FD4800E48AB7 /* Model */,
+				F91E5CAD1DD2FD4800E48AB7 /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		F91E5CAB1DD2FD4800E48AB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F91E5CAC1DD2FD4800E48AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91E5CAD1DD2FD4800E48AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91E5CAE1DD2FD4800E48AB7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F91E5CAF1DD2FD4800E48AB7 /* Controller */,
+				F91E5CB01DD2FD4800E48AB7 /* Model */,
+				F91E5CB11DD2FD4800E48AB7 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F91E5CAF1DD2FD4800E48AB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F91E5CB01DD2FD4800E48AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91E5CB11DD2FD4800E48AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91E5CB21DD2FD4800E48AB7 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				F91E5CB31DD2FD4800E48AB7 /* Controller */,
+				F91E5CB41DD2FD4800E48AB7 /* Model */,
+				F91E5CB51DD2FD4800E48AB7 /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		F91E5CB31DD2FD4800E48AB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F91E5CB41DD2FD4800E48AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91E5CB51DD2FD4800E48AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91E5CB61DD2FD4800E48AB7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F91E5CB71DD2FD4800E48AB7 /* Controller */,
+				F91E5CB81DD2FD4800E48AB7 /* Model */,
+				F91E5CB91DD2FD4800E48AB7 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F91E5CB71DD2FD4800E48AB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F91E5CB81DD2FD4800E48AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91E5CB91DD2FD4800E48AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91E5CBA1DD2FD4800E48AB7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F91E5CBB1DD2FD4800E48AB7 /* Controller */,
+				F91E5CBC1DD2FD4800E48AB7 /* Model */,
+				F91E5CBD1DD2FD4800E48AB7 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F91E5CBB1DD2FD4800E48AB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F91E5CBC1DD2FD4800E48AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91E5CBD1DD2FD4800E48AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91E5CBE1DD2FD4800E48AB7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F91E5CBF1DD2FD4800E48AB7 /* Controller */,
+				F91E5CC01DD2FD4800E48AB7 /* Model */,
+				F91E5CC11DD2FD4800E48AB7 /* View */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F91E5CBF1DD2FD4800E48AB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F91E5CC01DD2FD4800E48AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91E5CC11DD2FD4800E48AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,8 +539,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5XKUVDTMEL;
 				INFOPLIST_FILE = DouyuSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rensq.DouyuSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,8 +554,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5XKUVDTMEL;
 				INFOPLIST_FILE = DouyuSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rensq.DouyuSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
