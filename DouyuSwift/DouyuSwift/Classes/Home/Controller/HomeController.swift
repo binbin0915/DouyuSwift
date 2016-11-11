@@ -1,14 +1,14 @@
 //
-//  MainController.swift
+//  HomeController.swift
 //  DouyuSwift
 //
-//  Created by ToothBond on 16/11/9.
+//  Created by ToothBond on 16/11/10.
 //  Copyright © 2016年 ToothBond. All rights reserved.
 //
 
 import UIKit
 
-class MainController: UITabBarController {
+class HomeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

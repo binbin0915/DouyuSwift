@@ -1,5 +1,5 @@
 //
-//  MainController.swift
+//  ProfileController.swift
 //  DouyuSwift
 //
 //  Created by ToothBond on 16/11/9.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainController: UITabBarController {
+class ProfileController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
