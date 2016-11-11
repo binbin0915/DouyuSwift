@@ -9,13 +9,39 @@
 import UIKit
 
 class PageTitleView: UIView {
+    
+    fileprivate var titles : [String]
+    
+//    fileprivate lazy var scrollView : UIScrollView
+//    
+//    fileprivate lazy var scrollLine : UIView
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    init(frame: CGRect, titles : [String]) {
+        self.titles = titles
+        super.init(frame: frame)
+        
+        setupUI()
     }
-    */
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
+}
+
+extension PageTitleView {
+    fileprivate func setupUI() {
+        
+        setupTitleLabels()
+        
+        setupBottomLineAndScrollLine()
+    }
+    
+    private func setupTitleLabels() {
+    
+    }
+    
+    private func setupBottomLineAndScrollLine() {
+    
+    }
 }

@@ -13,7 +13,15 @@ class MainController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+        // 通过Storyboard获取控制器
+        addChildVC(storyName: "Home")
+        addChildVC(storyName: "Live")
+        addChildVC(storyName: "Follow")
+        addChildVC(storyName: "Profile")
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +30,11 @@ class MainController: UITabBarController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func addChildVC(storyName: String) {
+        // 通过Storyboard获取控制器
+        let childVC = UIStoryboard(name: storyName, bundle: nil).instantiateInitialViewController()!
+        
+        addChildViewController(childVC)
     }
-    */
 
 }
