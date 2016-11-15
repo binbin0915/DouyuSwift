@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8543C3418207A3BA34814C37 /* Pods_DouyuSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FC80E2CB73BC5F80EF1E35 /* Pods_DouyuSwift.framework */; };
 		F91DC3191DD44D71005470BC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91DC3181DD44D71005470BC /* HomeController.swift */; };
 		F91E5C8A1DD2F8D400E48AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E5C891DD2F8D400E48AB7 /* AppDelegate.swift */; };
 		F91E5C8F1DD2F8D400E48AB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91E5C8D1DD2F8D400E48AB7 /* Main.storyboard */; };
@@ -24,6 +25,14 @@
 		F95521181DD4584100EB7F8D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95521171DD4584100EB7F8D /* Common.swift */; };
 		F955211A1DD45FB400EB7F8D /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95521191DD45FB400EB7F8D /* PageContentView.swift */; };
 		F971A7891DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */; };
+		F9B95D3B1DD5BE1E006CB7C0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B95D3A1DD5BE1E006CB7C0 /* UIColor-Extension.swift */; };
+		F9DB64BF1DD9A22C00BF32D3 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DB64BE1DD9A22C00BF32D3 /* RecommendController.swift */; };
+		F9DB64C21DD9B58800BF32D3 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DB64C01DD9B58800BF32D3 /* CollectionNormalCell.swift */; };
+		F9DB64C31DD9B58800BF32D3 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DB64C11DD9B58800BF32D3 /* CollectionNormalCell.xib */; };
+		F9DB64C61DD9B59B00BF32D3 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DB64C41DD9B59B00BF32D3 /* CollectionPrettyCell.swift */; };
+		F9DB64C71DD9B59B00BF32D3 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DB64C51DD9B59B00BF32D3 /* CollectionPrettyCell.xib */; };
+		F9DB64CA1DD9B5C600BF32D3 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DB64C81DD9B5C600BF32D3 /* CollectionHeaderView.swift */; };
+		F9DB64CB1DD9B5C600BF32D3 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DB64C91DD9B5C600BF32D3 /* CollectionHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53FC80E2CB73BC5F80EF1E35 /* Pods_DouyuSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouyuSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		549F456753441428FB3A3579 /* Pods-DouyuSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyuSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouyuSwift/Pods-DouyuSwift.release.xcconfig"; sourceTree = "<group>"; };
+		B2AB181708003225FE83534F /* Pods-DouyuSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyuSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouyuSwift/Pods-DouyuSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F91DC3181DD44D71005470BC /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F91E5C861DD2F8D400E48AB7 /* DouyuSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouyuSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91E5C891DD2F8D400E48AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +70,14 @@
 		F95521171DD4584100EB7F8D /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		F95521191DD45FB400EB7F8D /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		F9B95D3A1DD5BE1E006CB7C0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		F9DB64BE1DD9A22C00BF32D3 /* RecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
+		F9DB64C01DD9B58800BF32D3 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
+		F9DB64C11DD9B58800BF32D3 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		F9DB64C41DD9B59B00BF32D3 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		F9DB64C51DD9B59B00BF32D3 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		F9DB64C81DD9B5C600BF32D3 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		F9DB64C91DD9B5C600BF32D3 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8543C3418207A3BA34814C37 /* Pods_DouyuSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +99,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6645B0BACD99564146F9742A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53FC80E2CB73BC5F80EF1E35 /* Pods_DouyuSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76B7EA3B20ED534C8FC788FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2AB181708003225FE83534F /* Pods-DouyuSwift.debug.xcconfig */,
+				549F456753441428FB3A3579 /* Pods-DouyuSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F91E5C7D1DD2F8D400E48AB7 = {
 			isa = PBXGroup;
 			children = (
 				F91E5C881DD2F8D400E48AB7 /* DouyuSwift */,
 				F91E5C9D1DD2F8D400E48AB7 /* DouyuSwiftTests */,
 				F91E5C871DD2F8D400E48AB7 /* Products */,
+				76B7EA3B20ED534C8FC788FC /* Pods */,
+				6645B0BACD99564146F9742A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				F91DC3181DD44D71005470BC /* HomeController.swift */,
+				F9DB64BE1DD9A22C00BF32D3 /* RecommendController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +232,8 @@
 		F91E5CB11DD2FD4800E48AB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F9DB64C81DD9B5C600BF32D3 /* CollectionHeaderView.swift */,
+				F9DB64C91DD9B5C600BF32D3 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +302,10 @@
 			children = (
 				F95521151DD456E000EB7F8D /* PageTitleView.swift */,
 				F95521191DD45FB400EB7F8D /* PageContentView.swift */,
+				F9DB64C01DD9B58800BF32D3 /* CollectionNormalCell.swift */,
+				F9DB64C11DD9B58800BF32D3 /* CollectionNormalCell.xib */,
+				F9DB64C41DD9B59B00BF32D3 /* CollectionPrettyCell.swift */,
+				F9DB64C51DD9B59B00BF32D3 /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */,
+				F9B95D3A1DD5BE1E006CB7C0 /* UIColor-Extension.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -320,9 +368,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F91E5CA31DD2F8D400E48AB7 /* Build configuration list for PBXNativeTarget "DouyuSwift" */;
 			buildPhases = (
+				658CBD967FA740E4D08A98E3 /* Check Pods Manifest.lock */,
 				F91E5C821DD2F8D400E48AB7 /* Sources */,
 				F91E5C831DD2F8D400E48AB7 /* Frameworks */,
 				F91E5C841DD2F8D400E48AB7 /* Resources */,
+				64D5B9893843E676258D6406 /* Embed Pods Frameworks */,
+				E458D7D5ED4027C2AF21D3BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,11 +415,13 @@
 					F91E5C851DD2F8D400E48AB7 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5XKUVDTMEL;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					F91E5C991DD2F8D400E48AB7 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5XKUVDTMEL;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F91E5C851DD2F8D400E48AB7;
 					};
@@ -400,8 +453,11 @@
 			files = (
 				F91E5CDB1DD30E2000E48AB7 /* Profile.storyboard in Resources */,
 				F91E5CD91DD30DE300E48AB7 /* Follow.storyboard in Resources */,
+				F9DB64C31DD9B58800BF32D3 /* CollectionNormalCell.xib in Resources */,
 				F91E5CD51DD30D5D00E48AB7 /* Home.storyboard in Resources */,
 				F91E5C911DD2F8D400E48AB7 /* Assets.xcassets in Resources */,
+				F9DB64CB1DD9B5C600BF32D3 /* CollectionHeaderView.xib in Resources */,
+				F9DB64C71DD9B59B00BF32D3 /* CollectionPrettyCell.xib in Resources */,
 				F91E5CD71DD30D9D00E48AB7 /* Live.storyboard in Resources */,
 				F91E5C8F1DD2F8D400E48AB7 /* Main.storyboard in Resources */,
 			);
@@ -416,6 +472,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64D5B9893843E676258D6406 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouyuSwift/Pods-DouyuSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		658CBD967FA740E4D08A98E3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E458D7D5ED4027C2AF21D3BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouyuSwift/Pods-DouyuSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F91E5C821DD2F8D400E48AB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -427,10 +531,15 @@
 				F955211A1DD45FB400EB7F8D /* PageContentView.swift in Sources */,
 				F91DC3191DD44D71005470BC /* HomeController.swift in Sources */,
 				F95521181DD4584100EB7F8D /* Common.swift in Sources */,
+				F9DB64CA1DD9B5C600BF32D3 /* CollectionHeaderView.swift in Sources */,
+				F9DB64BF1DD9A22C00BF32D3 /* RecommendController.swift in Sources */,
 				F971A7891DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift in Sources */,
+				F9DB64C21DD9B58800BF32D3 /* CollectionNormalCell.swift in Sources */,
 				F91E5CD31DD30C4200E48AB7 /* MainController.swift in Sources */,
 				F91E5CE31DD31D3200E48AB7 /* LiveController.swift in Sources */,
 				F91E5C8A1DD2F8D400E48AB7 /* AppDelegate.swift in Sources */,
+				F9B95D3B1DD5BE1E006CB7C0 /* UIColor-Extension.swift in Sources */,
+				F9DB64C61DD9B59B00BF32D3 /* CollectionPrettyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +667,7 @@
 		};
 		F91E5CA41DD2F8D400E48AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2AB181708003225FE83534F /* Pods-DouyuSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -573,6 +683,7 @@
 		};
 		F91E5CA51DD2F8D400E48AB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549F456753441428FB3A3579 /* Pods-DouyuSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

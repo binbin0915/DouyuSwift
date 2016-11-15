@@ -16,10 +16,10 @@ class MainController: UITabBarController {
         
         
         // 通过Storyboard获取控制器
-        addChildVC(storyName: "Home")
-        addChildVC(storyName: "Live")
-        addChildVC(storyName: "Follow")
-        addChildVC(storyName: "Profile")
+        addChildVC("Home")
+        addChildVC("Live")
+        addChildVC("Follow")
+        addChildVC("Profile")
         
         
     }
@@ -30,7 +30,7 @@ class MainController: UITabBarController {
     }
     
 
-    private func addChildVC(storyName: String) {
+    fileprivate func addChildVC(_ storyName: String) {
         // 通过Storyboard获取控制器
         let childVC = UIStoryboard(name: storyName, bundle: nil).instantiateInitialViewController()!
         
