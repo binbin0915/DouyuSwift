@@ -68,6 +68,12 @@
                 <constraint firstItem="ZHy-Fh-AX3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jfD-KB-Rr3"/>
             </constraints>
             <size key="customSize" width="304" height="248"/>
+            <connections>
+                <outlet property="imageView" destination="tnY-q0-vk8" id="gE7-kk-YOz"/>
+                <outlet property="nickLabel" destination="s1I-c9-P0K" id="yWc-Zd-SaK"/>
+                <outlet property="onlineLabel" destination="mTB-in-90k" id="TlG-LC-W1v"/>
+                <outlet property="titleLabel" destination="E9J-fH-JXB" id="h6e-11-O9d"/>
+            </connections>
             <point key="canvasLocation" x="161" y="121"/>
         </collectionViewCell>
     </objects>

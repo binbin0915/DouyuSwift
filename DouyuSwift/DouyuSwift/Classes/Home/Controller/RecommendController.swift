@@ -20,6 +20,8 @@ private let kHeaderIdentify : String = "kHeaderIdentify"
 
 class RecommendController: UIViewController {
     
+    fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
+    
     fileprivate lazy var collectionView : UICollectionView = { [unowned self] in
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kItemWidth, height: kNormalItemHeight)
@@ -50,7 +52,7 @@ class RecommendController: UIViewController {
 
         setupUI()
         
-        
+        loadData()
     
     }
 
@@ -61,6 +63,12 @@ extension RecommendController {
     func setupUI() {
         self.view.addSubview(collectionView)
         
+    }
+    
+    func loadData() {
+        recommendVM.requestData{
+            self.collectionView.reloadData()
+        }
     }
 }
 
@@ -83,11 +91,22 @@ extension RecommendController : UICollectionViewDataSource,UICollectionViewDeleg
         }else{
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellIdentify, for: indexPath)
         }
+        
+//        if (indexPath as NSIndexPath).section > 1 {
+//            let group = recommendVM.anchorGroups[(indexPath as NSIndexPath).section]
+//            let anchor = group.anchors[(indexPath as NSIndexPath).row]
+//            (cell as! CollectionNormalCell).anchor = anchor
+//        }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderIdentify, for: indexPath)
+        let headerView : CollectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderIdentify, for: indexPath) as! CollectionHeaderView
+        if (indexPath as NSIndexPath).section > 1 {
+            let group = recommendVM.anchorGroups[(indexPath as NSIndexPath).section]
+            headerView.group = group
+        }
+
         return headerView
     }
     
@@ -97,11 +116,9 @@ extension RecommendController : UICollectionViewDataSource,UICollectionViewDeleg
         var size : CGSize
         if (indexPath as NSIndexPath).section == 1 {
             size = CGSize(width: kItemWidth, height: kPrettyItemHeight)
-            print("item size = \(size)")
             return size
         }
         size = CGSize(width: kItemWidth, height: kNormalItemHeight)
-        print("item size = \(size)")
         return size
     }
     

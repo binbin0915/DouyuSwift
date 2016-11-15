@@ -10,6 +10,14 @@ import UIKit
 
 class CollectionHeaderView: UICollectionReusableView {
 
+    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     
-    
+    var group : AnchorGroup? {
+        didSet {
+            guard let group = group else { return }
+            titleLabel.text = group.tag_name
+            iconImage.image = UIImage(named: group.icon_name ?? "home_header_normal")
+        }
+    }
 }

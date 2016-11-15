@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CollectionHeaderView" customModule="DouyuSwift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -23,8 +23,10 @@
                         <constraint firstAttribute="width" constant="18" id="r4p-zn-GHA"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="热门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-o5-pII">
-                    <frame key="frameInset" minX="33" minY="22" width="33" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-o5-pII">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="yt5-6v-ma1"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -46,6 +48,10 @@
                 <constraint firstItem="nSn-o5-pII" firstAttribute="centerY" secondItem="Aal-j7-ccG" secondAttribute="centerY" id="y9c-2C-cSr"/>
                 <constraint firstItem="Aal-j7-ccG" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="yMQ-GN-fCQ"/>
             </constraints>
+            <connections>
+                <outlet property="iconImage" destination="Aal-j7-ccG" id="TbO-mO-h7D"/>
+                <outlet property="titleLabel" destination="nSn-o5-pII" id="FbE-Un-Cq7"/>
+            </connections>
             <point key="canvasLocation" x="43" y="58"/>
         </collectionReusableView>
     </objects>

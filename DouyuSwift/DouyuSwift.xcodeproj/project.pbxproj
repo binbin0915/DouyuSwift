@@ -25,6 +25,11 @@
 		F95521181DD4584100EB7F8D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95521171DD4584100EB7F8D /* Common.swift */; };
 		F955211A1DD45FB400EB7F8D /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95521191DD45FB400EB7F8D /* PageContentView.swift */; };
 		F971A7891DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */; };
+		F97FB5D11DDABC900010CD1A /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB5D01DDABC900010CD1A /* NetworkTools.swift */; };
+		F97FB5D31DDAE42D0010CD1A /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB5D21DDAE42D0010CD1A /* Date-Extension.swift */; };
+		F97FB5D61DDAE5260010CD1A /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB5D51DDAE5260010CD1A /* RecommendViewModel.swift */; };
+		F97FB5D81DDAE9FF0010CD1A /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB5D71DDAE9FF0010CD1A /* AnchorGroup.swift */; };
+		F97FB5DA1DDB0AEC0010CD1A /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB5D91DDB0AEC0010CD1A /* AnchorModel.swift */; };
 		F9B95D3B1DD5BE1E006CB7C0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B95D3A1DD5BE1E006CB7C0 /* UIColor-Extension.swift */; };
 		F9DB64BF1DD9A22C00BF32D3 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DB64BE1DD9A22C00BF32D3 /* RecommendController.swift */; };
 		F9DB64C21DD9B58800BF32D3 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DB64C01DD9B58800BF32D3 /* CollectionNormalCell.swift */; };
@@ -70,6 +75,11 @@
 		F95521171DD4584100EB7F8D /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		F95521191DD45FB400EB7F8D /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		F97FB5D01DDABC900010CD1A /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		F97FB5D21DDAE42D0010CD1A /* Date-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
+		F97FB5D51DDAE5260010CD1A /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		F97FB5D71DDAE9FF0010CD1A /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		F97FB5D91DDB0AEC0010CD1A /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		F9B95D3A1DD5BE1E006CB7C0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		F9DB64BE1DD9A22C00BF32D3 /* RecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
 		F9DB64C01DD9B58800BF32D3 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
@@ -205,6 +215,7 @@
 		F91E5CAE1DD2FD4800E48AB7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F97FB5D41DDAE5110010CD1A /* ViewModel */,
 				F91E5CD41DD30D5D00E48AB7 /* Home.storyboard */,
 				F91E5CAF1DD2FD4800E48AB7 /* Controller */,
 				F91E5CB01DD2FD4800E48AB7 /* Model */,
@@ -293,6 +304,8 @@
 		F91E5CB81DD2FD4800E48AB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F97FB5D71DDAE9FF0010CD1A /* AnchorGroup.swift */,
+				F97FB5D91DDB0AEC0010CD1A /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,6 +361,7 @@
 			children = (
 				F971A7851DD41F2C00FB1BBB /* Extention */,
 				F95521171DD4584100EB7F8D /* Common.swift */,
+				F97FB5D01DDABC900010CD1A /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -357,8 +371,17 @@
 			children = (
 				F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */,
 				F9B95D3A1DD5BE1E006CB7C0 /* UIColor-Extension.swift */,
+				F97FB5D21DDAE42D0010CD1A /* Date-Extension.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		F97FB5D41DDAE5110010CD1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F97FB5D51DDAE5260010CD1A /* RecommendViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,19 +550,24 @@
 			files = (
 				F95521161DD456E000EB7F8D /* PageTitleView.swift in Sources */,
 				F91E5CE11DD31D2600E48AB7 /* ProfileController.swift in Sources */,
+				F97FB5D31DDAE42D0010CD1A /* Date-Extension.swift in Sources */,
 				F91E5CDF1DD31D1900E48AB7 /* FollowController.swift in Sources */,
 				F955211A1DD45FB400EB7F8D /* PageContentView.swift in Sources */,
 				F91DC3191DD44D71005470BC /* HomeController.swift in Sources */,
 				F95521181DD4584100EB7F8D /* Common.swift in Sources */,
+				F97FB5D61DDAE5260010CD1A /* RecommendViewModel.swift in Sources */,
 				F9DB64CA1DD9B5C600BF32D3 /* CollectionHeaderView.swift in Sources */,
 				F9DB64BF1DD9A22C00BF32D3 /* RecommendController.swift in Sources */,
+				F97FB5D11DDABC900010CD1A /* NetworkTools.swift in Sources */,
 				F971A7891DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift in Sources */,
 				F9DB64C21DD9B58800BF32D3 /* CollectionNormalCell.swift in Sources */,
 				F91E5CD31DD30C4200E48AB7 /* MainController.swift in Sources */,
 				F91E5CE31DD31D3200E48AB7 /* LiveController.swift in Sources */,
 				F91E5C8A1DD2F8D400E48AB7 /* AppDelegate.swift in Sources */,
+				F97FB5DA1DDB0AEC0010CD1A /* AnchorModel.swift in Sources */,
 				F9B95D3B1DD5BE1E006CB7C0 /* UIColor-Extension.swift in Sources */,
 				F9DB64C61DD9B59B00BF32D3 /* CollectionPrettyCell.swift in Sources */,
+				F97FB5D81DDAE9FF0010CD1A /* AnchorGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
