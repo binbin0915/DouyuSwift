@@ -67,6 +67,7 @@ extension RecommendController {
     
     func loadData() {
         recommendVM.requestData{
+            print("self.collectionView.reloadData")
             self.collectionView.reloadData()
         }
     }
@@ -74,38 +75,33 @@ extension RecommendController {
 
 extension RecommendController : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12;
+        return recommendVM.anchorGroups.count;
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+        let group = recommendVM.anchorGroups[section]
+        return group.anchors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let group = recommendVM.anchorGroups[(indexPath as NSIndexPath).section]
+        let anchor = group.anchors[(indexPath as NSIndexPath).row]
         var cell : UICollectionViewCell!
         if (indexPath as NSIndexPath).section == 1 {
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellIdentify, for: indexPath)
+            (cell as! CollectionPrettyCell).anchor = anchor
         }else{
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellIdentify, for: indexPath)
+            (cell as! CollectionNormalCell).anchor = anchor
         }
         
-//        if (indexPath as NSIndexPath).section > 1 {
-//            let group = recommendVM.anchorGroups[(indexPath as NSIndexPath).section]
-//            let anchor = group.anchors[(indexPath as NSIndexPath).row]
-//            (cell as! CollectionNormalCell).anchor = anchor
-//        }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headerView : CollectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderIdentify, for: indexPath) as! CollectionHeaderView
-        if (indexPath as NSIndexPath).section > 1 {
-            let group = recommendVM.anchorGroups[(indexPath as NSIndexPath).section]
-            headerView.group = group
-        }
+        let group = recommendVM.anchorGroups[(indexPath as NSIndexPath).section]
+        headerView.group = group
 
         return headerView
     }

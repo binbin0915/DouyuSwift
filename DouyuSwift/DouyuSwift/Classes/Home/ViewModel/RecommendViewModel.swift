@@ -28,7 +28,7 @@ extension RecommendViewModel {
         //第一部分推荐数据
         dGroup.enter()
         //http://capi.douyucdn.cn/api/v1/getbigDataRoom
-        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom") { (result) in
+        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", parameters: parameters) { (result) in
             guard let resultDict = result as? [String : NSObject] else { return }
             guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
             self.bigDataGroup.tag_name = "热门"
@@ -45,7 +45,7 @@ extension RecommendViewModel {
         //第二部分推荐数据
         dGroup.enter()
         //http://capi.douyucdn.cn/api/v1/getVerticalRoom
-        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getVerticalRoom") { (result) in
+        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getVerticalRoom", parameters: parameters) { (result) in
             guard let resultDict = result as? [String : NSObject] else { return }
             guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
             self.prettyGroup.tag_name = "颜值"
