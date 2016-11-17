@@ -9,29 +9,17 @@
 import UIKit
 import Kingfisher
 
-class CollectionNormalCell: UICollectionViewCell {
+class CollectionNormalCell: CollectionBaseCell {
 
-    @IBOutlet weak var imageView: UIImageView!
+
     @IBOutlet weak var nickLabel: UILabel!
-    @IBOutlet weak var onlineLabel: UIButton!
-    @IBOutlet weak var titleLabel: UILabel!
     
-    var anchor : AnchorModel? {
+    override var anchor : AnchorModel? {
         didSet {
-            guard let anchor = anchor else { return }
+            super.anchor = anchor
             
-            var onlineStr : String = ""
-            if anchor.online >= 10000 {
-                onlineStr = "\(Int(anchor.online/10000))万在线"
-            } else {
-                onlineStr = "\(anchor.online)在线"
-            }
-            
-            onlineLabel.setTitle(onlineStr, for: .normal)
-            nickLabel.text = anchor.nickname
-            
-            guard let iconURL = URL(string: anchor.vertical_src) else { return }
-            imageView.kf.setImage(with: iconURL)
+            nickLabel.text = anchor?.nickname
+
         }
     }
 }

@@ -39,22 +39,23 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2万在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mjk-dU-TBH">
-                        <color key="backgroundColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="0.52599676724137923" colorSpace="calibratedRGB"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUt-Se-xAK">
+                        <color key="backgroundColor" red="0.049018429487179493" green="0.049018429487179493" blue="0.049018429487179493" alpha="0.41115301724137931" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="3py-Dw-qfb"/>
-                            <constraint firstAttribute="width" constant="60" id="fP8-N2-qOD"/>
+                            <constraint firstAttribute="height" constant="20" id="2dX-bh-Lmd"/>
+                            <constraint firstAttribute="width" constant="60" id="jXU-ll-phP"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
             </view>
             <constraints>
@@ -63,9 +64,9 @@
                 <constraint firstAttribute="trailing" secondItem="K8T-gp-uuM" secondAttribute="trailing" id="Elp-In-Tcz"/>
                 <constraint firstItem="K8T-gp-uuM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MPf-ct-w1u"/>
                 <constraint firstAttribute="bottom" secondItem="Ylf-KV-RF9" secondAttribute="bottom" constant="5" id="UzR-3N-xLc"/>
-                <constraint firstItem="Mjk-dU-TBH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="b79-ZY-De7"/>
-                <constraint firstAttribute="trailing" secondItem="Mjk-dU-TBH" secondAttribute="trailing" constant="8" id="c9m-Tf-g08"/>
+                <constraint firstAttribute="trailing" secondItem="xUt-Se-xAK" secondAttribute="trailing" constant="8" id="bqy-RL-BLa"/>
                 <constraint firstItem="Ylf-KV-RF9" firstAttribute="top" secondItem="K8T-gp-uuM" secondAttribute="bottom" id="h5z-gA-V5O"/>
+                <constraint firstItem="xUt-Se-xAK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="hf1-mi-Cvi"/>
                 <constraint firstItem="Jlb-6s-WBo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jFU-EU-jqW"/>
                 <constraint firstAttribute="trailing" secondItem="Jlb-6s-WBo" secondAttribute="trailing" id="l9u-MP-y50"/>
                 <constraint firstAttribute="trailing" secondItem="Ylf-KV-RF9" secondAttribute="trailing" id="omd-tS-Nz4"/>
@@ -75,7 +76,7 @@
             <connections>
                 <outlet property="addressBtn" destination="Ylf-KV-RF9" id="LTr-5r-EDx"/>
                 <outlet property="imageView" destination="Jlb-6s-WBo" id="wFJ-BE-Jxb"/>
-                <outlet property="onlineLabel" destination="Mjk-dU-TBH" id="BZx-SA-s9Z"/>
+                <outlet property="onlineLabel" destination="xUt-Se-xAK" id="RJL-eN-UWE"/>
                 <outlet property="titleLabel" destination="K8T-gp-uuM" id="oXg-ta-Y5C"/>
             </connections>
             <point key="canvasLocation" x="161.5" y="159"/>
