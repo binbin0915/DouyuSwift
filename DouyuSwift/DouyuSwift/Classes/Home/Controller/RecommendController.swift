@@ -14,6 +14,9 @@ private let kNormalItemHeight : CGFloat = kItemWidth * 3/4
 private let kPrettyItemHeight : CGFloat = kItemWidth * 4/3
 private let kHeaderHeight : CGFloat = 50
 
+private let kCycleViewH = kScreenW * 3/8
+private let kGameViewH : CGFloat = 90
+
 private let kNormalCellIdentify : String = "kNormalCellIdentify"
 private let kPrettyCellIdentify : String = "kPrettyCellIdentify"
 private let kHeaderIdentify : String = "kHeaderIdentify"
@@ -41,10 +44,21 @@ class RecommendController: UIViewController {
         collectionView.register(UINib(nibName: "CollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellIdentify)
         collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderIdentify)
         
-        
-
         return collectionView
-        
+    }()
+    
+    fileprivate lazy var cycleView : RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
+        cycleView.backgroundColor = UIColor.red
+        return cycleView
+    }()
+    
+    fileprivate lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        gameView.backgroundColor = UIColor.blue
+        return gameView
     }()
 
     override func viewDidLoad() {
@@ -62,14 +76,23 @@ class RecommendController: UIViewController {
 extension RecommendController {
     func setupUI() {
         self.view.addSubview(collectionView)
+        collectionView.addSubview(cycleView)
+        collectionView.addSubview(gameView)
         
+        collectionView.contentInset = UIEdgeInsetsMake(kCycleViewH + kGameViewH, 0, 0, 0)
     }
     
     func loadData() {
+        //轮播数据
+        recommendVM.requestCycleData {
+            self.cycleView.cycleGroups = self.recommendVM.cycleGroups
+        }
+        
+        //推荐数据
         recommendVM.requestData{
-            print("self.collectionView.reloadData")
             self.collectionView.reloadData()
         }
+
     }
 }
 

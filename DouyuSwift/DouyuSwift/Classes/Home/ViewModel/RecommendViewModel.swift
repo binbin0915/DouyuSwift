@@ -11,6 +11,7 @@ import UIKit
 class RecommendViewModel {
     
     lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
+    lazy var cycleGroups : [CycleModel] = [CycleModel]()
     fileprivate lazy var bigDataGroup : AnchorGroup = AnchorGroup()
     fileprivate lazy var prettyGroup : AnchorGroup = AnchorGroup()
 
@@ -81,6 +82,26 @@ extension RecommendViewModel {
         dGroup.notify(queue: DispatchQueue.main) { 
             self.anchorGroups.insert(self.prettyGroup, at: 0)
             self.anchorGroups.insert(self.bigDataGroup, at: 0)
+            
+            finishedCallback()
+        }
+    }
+    
+    
+    
+    /// 请求推荐轮播数据
+    ///
+    /// - parameter finishedCallback: 请求成功回调
+    func requestCycleData(_ finishedCallback : @escaping ()->()) {
+        NetworkTools.requestData(.get, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version" : "2.300"]) { (result) in
+            
+            guard let resultDict = result as? [String : NSObject] else { return }
+            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
+            
+            for dict in dataArray {
+                let cycle = CycleModel(dict: dict)
+                self.cycleGroups.append(cycle)
+            }
             
             finishedCallback()
         }
