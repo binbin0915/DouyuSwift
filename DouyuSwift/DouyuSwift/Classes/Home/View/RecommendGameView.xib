@@ -10,8 +10,30 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecommendGameView" customModule="DouyuSwift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="464" height="90"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-GK-3OL">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="RHN-ek-He8">
+                        <size key="itemSize" width="80" height="90"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="JNR-60-haQ"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zL5-GK-3OL" secondAttribute="trailing" id="AAY-dw-2L3"/>
+                <constraint firstItem="zL5-GK-3OL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CJI-Ba-eBR"/>
+                <constraint firstItem="zL5-GK-3OL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d0q-Bh-YJ2"/>
+                <constraint firstAttribute="bottom" secondItem="zL5-GK-3OL" secondAttribute="bottom" id="fuM-4Q-rrZ"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="zL5-GK-3OL" id="HXn-bm-Ck2"/>
+            </connections>
             <point key="canvasLocation" x="78" y="342"/>
         </view>
     </objects>

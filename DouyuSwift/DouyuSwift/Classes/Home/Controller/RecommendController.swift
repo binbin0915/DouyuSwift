@@ -57,7 +57,6 @@ class RecommendController: UIViewController {
     fileprivate lazy var gameView : RecommendGameView = {
         let gameView = RecommendGameView.recommendGameView()
         gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
-        gameView.backgroundColor = UIColor.blue
         return gameView
     }()
 
@@ -67,10 +66,7 @@ class RecommendController: UIViewController {
         setupUI()
         
         loadData()
-    
     }
-
-
 }
 
 extension RecommendController {
@@ -91,6 +87,8 @@ extension RecommendController {
         //推荐数据
         recommendVM.requestData{
             self.collectionView.reloadData()
+            
+            self.gameView.groups = self.recommendVM.anchorGroups
         }
 
     }

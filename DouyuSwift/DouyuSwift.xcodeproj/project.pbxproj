@@ -28,6 +28,8 @@
 		F9731F881DDEA172009D4777 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9731F871DDEA172009D4777 /* CycleModel.swift */; };
 		F9731F8A1DDEA4FE009D4777 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9731F891DDEA4FE009D4777 /* CollectionCycleCell.xib */; };
 		F9731F8C1DDEA730009D4777 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9731F8B1DDEA730009D4777 /* CollectionCycleCell.swift */; };
+		F9731F8F1DDEDA64009D4777 /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9731F8D1DDEDA64009D4777 /* CollectionGameCell.swift */; };
+		F9731F901DDEDA64009D4777 /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9731F8E1DDEDA64009D4777 /* CollectionGameCell.xib */; };
 		F97FB5D11DDABC900010CD1A /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB5D01DDABC900010CD1A /* NetworkTools.swift */; };
 		F97FB5D31DDAE42D0010CD1A /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB5D21DDAE42D0010CD1A /* Date-Extension.swift */; };
 		F97FB5D61DDAE5260010CD1A /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97FB5D51DDAE5260010CD1A /* RecommendViewModel.swift */; };
@@ -86,6 +88,8 @@
 		F9731F871DDEA172009D4777 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		F9731F891DDEA4FE009D4777 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
 		F9731F8B1DDEA730009D4777 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
+		F9731F8D1DDEDA64009D4777 /* CollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionGameCell.swift; sourceTree = "<group>"; };
+		F9731F8E1DDEDA64009D4777 /* CollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionGameCell.xib; sourceTree = "<group>"; };
 		F97FB5D01DDABC900010CD1A /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		F97FB5D21DDAE42D0010CD1A /* Date-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
 		F97FB5D51DDAE5260010CD1A /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 				F982D31A1DDDAFC70066AB00 /* RecommendGameView.swift */,
 				F9731F891DDEA4FE009D4777 /* CollectionCycleCell.xib */,
 				F9731F8B1DDEA730009D4777 /* CollectionCycleCell.swift */,
+				F9731F8D1DDEDA64009D4777 /* CollectionGameCell.swift */,
+				F9731F8E1DDEDA64009D4777 /* CollectionGameCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +509,7 @@
 				F91E5CD91DD30DE300E48AB7 /* Follow.storyboard in Resources */,
 				F9DB64C31DD9B58800BF32D3 /* CollectionNormalCell.xib in Resources */,
 				F91E5CD51DD30D5D00E48AB7 /* Home.storyboard in Resources */,
+				F9731F901DDEDA64009D4777 /* CollectionGameCell.xib in Resources */,
 				F91E5C911DD2F8D400E48AB7 /* Assets.xcassets in Resources */,
 				F9DB64CB1DD9B5C600BF32D3 /* CollectionHeaderView.xib in Resources */,
 				F9DB64C71DD9B59B00BF32D3 /* CollectionPrettyCell.xib in Resources */,
@@ -578,6 +585,7 @@
 				F95521161DD456E000EB7F8D /* PageTitleView.swift in Sources */,
 				F91E5CE11DD31D2600E48AB7 /* ProfileController.swift in Sources */,
 				F97FB5D31DDAE42D0010CD1A /* Date-Extension.swift in Sources */,
+				F9731F8F1DDEDA64009D4777 /* CollectionGameCell.swift in Sources */,
 				F91E5CDF1DD31D1900E48AB7 /* FollowController.swift in Sources */,
 				F982D31B1DDDAFC70066AB00 /* RecommendGameView.swift in Sources */,
 				F955211A1DD45FB400EB7F8D /* PageContentView.swift in Sources */,
