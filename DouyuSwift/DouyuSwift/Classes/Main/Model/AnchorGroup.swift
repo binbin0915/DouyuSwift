@@ -39,7 +39,7 @@ class AnchorGroup: NSObject {
     
     }
     
-    init(dict : [String : NSObject]) {
+    init(dict : [String : Any]) {
         super.init()
         
         setValuesForKeys(dict)

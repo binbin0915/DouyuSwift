@@ -20,7 +20,6 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Aal-j7-ccG">
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="7ST-EE-Ovr"/>
-                        <constraint firstAttribute="width" constant="18" id="r4p-zn-GHA"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-o5-pII">
@@ -50,6 +49,7 @@
             </constraints>
             <connections>
                 <outlet property="iconImage" destination="Aal-j7-ccG" id="TbO-mO-h7D"/>
+                <outlet property="moreBtn" destination="bw5-ov-jaP" id="2ks-fg-iNu"/>
                 <outlet property="titleLabel" destination="nSn-o5-pII" id="FbE-Un-Cq7"/>
             </connections>
             <point key="canvasLocation" x="43" y="58"/>

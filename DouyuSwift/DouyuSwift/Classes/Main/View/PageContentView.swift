@@ -76,7 +76,6 @@ extension PageContentView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionCellIdentify, for: indexPath)
         let childVC = childVCs[indexPath.item]
-        print(cell.contentView.bounds)
         for view in cell.contentView.subviews {
             view.removeFromSuperview()
         }
