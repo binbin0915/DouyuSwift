@@ -8,9 +8,8 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel : BaseViewModel {
     
-    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
     lazy var cycleGroups : [CycleModel] = [CycleModel]()
     fileprivate lazy var bigDataGroup : AnchorGroup = AnchorGroup()
     fileprivate lazy var prettyGroup : AnchorGroup = AnchorGroup()
@@ -64,18 +63,7 @@ extension RecommendViewModel {
         //http://capi.douyucdn.cn/api/v1/getHotCate?aid=ios&client_sys=ios&time=1479192120
         
         dGroup.enter()
-        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { (result) in
-//            print("result = \(result)")
-            
-            guard let resultDict = result as? [String : NSObject] else { return }
-            
-            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
-            
-            for dict in dataArray {
-                let group = AnchorGroup(dict : dict)
-                self.anchorGroups.append(group)
-            }
-            
+        loadAnchorData(URLString: "http://capi.douyucdn.cn/api/v1/getHotCate",parameters: parameters) {
             dGroup.leave()
         }
         
