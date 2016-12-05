@@ -33,6 +33,8 @@
 		F95FF91A1DF5121F00673C8F /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F95FF9191DF5121F00673C8F /* AmuseMenuView.xib */; };
 		F95FF91D1DF5171900673C8F /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FF91B1DF5171900673C8F /* AmuseMenuViewCell.swift */; };
 		F95FF91E1DF5171900673C8F /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F95FF91C1DF5171900673C8F /* AmuseMenuViewCell.xib */; };
+		F95FF9201DF543F800673C8F /* FunnyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FF91F1DF543F800673C8F /* FunnyController.swift */; };
+		F95FF9221DF5444500673C8F /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FF9211DF5444500673C8F /* FunnyViewModel.swift */; };
 		F971A7891DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */; };
 		F9731F881DDEA172009D4777 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9731F871DDEA172009D4777 /* CycleModel.swift */; };
 		F9731F8A1DDEA4FE009D4777 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9731F891DDEA4FE009D4777 /* CollectionCycleCell.xib */; };
@@ -104,6 +106,8 @@
 		F95FF9191DF5121F00673C8F /* AmuseMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
 		F95FF91B1DF5171900673C8F /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
 		F95FF91C1DF5171900673C8F /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
+		F95FF91F1DF543F800673C8F /* FunnyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyController.swift; sourceTree = "<group>"; };
+		F95FF9211DF5444500673C8F /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		F9731F871DDEA172009D4777 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		F9731F891DDEA4FE009D4777 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
@@ -274,6 +278,7 @@
 				F9731F911DDEE948009D4777 /* GameController.swift */,
 				F93D75F01DEFB8B100F0EB3E /* AmuseController.swift */,
 				F93D75F61DEFC3A100F0EB3E /* BaseAnchorContorller.swift */,
+				F95FF91F1DF543F800673C8F /* FunnyController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -443,6 +448,7 @@
 				F9731F931DDEEC61009D4777 /* GameViewModel.swift */,
 				F93D75F21DEFB8CC00F0EB3E /* AmuseViewModel.swift */,
 				F93D75F41DEFC05100F0EB3E /* BaseViewModel.swift */,
+				F95FF9211DF5444500673C8F /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -617,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95FF9221DF5444500673C8F /* FunnyViewModel.swift in Sources */,
 				F95FF91D1DF5171900673C8F /* AmuseMenuViewCell.swift in Sources */,
 				F95521161DD456E000EB7F8D /* PageTitleView.swift in Sources */,
 				F91E5CE11DD31D2600E48AB7 /* ProfileController.swift in Sources */,
@@ -645,6 +652,7 @@
 				F9731F941DDEEC61009D4777 /* GameViewModel.swift in Sources */,
 				F93D75F71DEFC3A100F0EB3E /* BaseAnchorContorller.swift in Sources */,
 				F91E5CE31DD31D3200E48AB7 /* LiveController.swift in Sources */,
+				F95FF9201DF543F800673C8F /* FunnyController.swift in Sources */,
 				F91E5C8A1DD2F8D400E48AB7 /* AppDelegate.swift in Sources */,
 				F97FB5DA1DDB0AEC0010CD1A /* AnchorModel.swift in Sources */,
 				F9B95D3B1DD5BE1E006CB7C0 /* UIColor-Extension.swift in Sources */,
