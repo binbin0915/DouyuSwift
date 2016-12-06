@@ -65,7 +65,7 @@ extension BaseAnchorContorller {
     }
 }
 
-extension BaseAnchorContorller : UICollectionViewDataSource, UICollectionViewDelegate {
+extension BaseAnchorContorller : UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return baseVM.anchorGroups.count
@@ -93,5 +93,22 @@ extension BaseAnchorContorller : UICollectionViewDataSource, UICollectionViewDel
         
     }
     
+}
+
+extension BaseAnchorContorller : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let group : AnchorGroup = baseVM.anchorGroups[indexPath.section]
+        let model : AnchorModel = group.anchors[indexPath.item]
+        
+        let roomVC = RoomController()
+        
+        if model.isVertical == 0 {
+            navigationController?.pushViewController(roomVC, animated: true)
+        }else{
+            present(roomVC, animated: true, completion: nil)
+        }
+        
+        
+    }
 }
 

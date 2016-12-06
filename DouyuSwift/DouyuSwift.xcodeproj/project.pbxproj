@@ -35,6 +35,9 @@
 		F95FF91E1DF5171900673C8F /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F95FF91C1DF5171900673C8F /* AmuseMenuViewCell.xib */; };
 		F95FF9201DF543F800673C8F /* FunnyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FF91F1DF543F800673C8F /* FunnyController.swift */; };
 		F95FF9221DF5444500673C8F /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FF9211DF5444500673C8F /* FunnyViewModel.swift */; };
+		F95FF9281DF54E8400673C8F /* RoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FF9271DF54E8400673C8F /* RoomController.swift */; };
+		F95FF92A1DF54F1900673C8F /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FF9291DF54F1900673C8F /* BaseController.swift */; };
+		F95FF92C1DF54F3500673C8F /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95FF92B1DF54F3500673C8F /* CustomNavigationController.swift */; };
 		F971A7891DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */; };
 		F9731F881DDEA172009D4777 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9731F871DDEA172009D4777 /* CycleModel.swift */; };
 		F9731F8A1DDEA4FE009D4777 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9731F891DDEA4FE009D4777 /* CollectionCycleCell.xib */; };
@@ -108,6 +111,9 @@
 		F95FF91C1DF5171900673C8F /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
 		F95FF91F1DF543F800673C8F /* FunnyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyController.swift; sourceTree = "<group>"; };
 		F95FF9211DF5444500673C8F /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
+		F95FF9271DF54E8400673C8F /* RoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomController.swift; sourceTree = "<group>"; };
+		F95FF9291DF54F1900673C8F /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F95FF92B1DF54F3500673C8F /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		F971A7881DD4206E00FB1BBB /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		F9731F871DDEA172009D4777 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		F9731F891DDEA4FE009D4777 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
@@ -215,6 +221,7 @@
 		F91E5CA91DD2FD4800E48AB7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F95FF9231DF54E6F00673C8F /* Room */,
 				F91E5CB61DD2FD4800E48AB7 /* Main */,
 				F91E5CB21DD2FD4800E48AB7 /* Live */,
 				F91E5CAE1DD2FD4800E48AB7 /* Home */,
@@ -361,6 +368,8 @@
 			isa = PBXGroup;
 			children = (
 				F91E5CD21DD30C4200E48AB7 /* MainController.swift */,
+				F95FF9291DF54F1900673C8F /* BaseController.swift */,
+				F95FF92B1DF54F3500673C8F /* CustomNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -429,6 +438,38 @@
 				F97FB5D01DDABC900010CD1A /* NetworkTools.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		F95FF9231DF54E6F00673C8F /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				F95FF9241DF54E6F00673C8F /* Controller */,
+				F95FF9251DF54E6F00673C8F /* Model */,
+				F95FF9261DF54E6F00673C8F /* View */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		F95FF9241DF54E6F00673C8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F95FF9271DF54E8400673C8F /* RoomController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F95FF9251DF54E6F00673C8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F95FF9261DF54E6F00673C8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F971A7851DD41F2C00FB1BBB /* Extention */ = {
@@ -639,6 +680,7 @@
 				F91DC3191DD44D71005470BC /* HomeController.swift in Sources */,
 				F95521181DD4584100EB7F8D /* Common.swift in Sources */,
 				F97FB5D61DDAE5260010CD1A /* RecommendViewModel.swift in Sources */,
+				F95FF92A1DF54F1900673C8F /* BaseController.swift in Sources */,
 				F9DB64CA1DD9B5C600BF32D3 /* CollectionHeaderView.swift in Sources */,
 				F9DB64BF1DD9A22C00BF32D3 /* RecommendController.swift in Sources */,
 				F9243C051DEE74C200D7AD79 /* GameModel.swift in Sources */,
@@ -649,6 +691,7 @@
 				F9DB64C21DD9B58800BF32D3 /* CollectionNormalCell.swift in Sources */,
 				F93D75F51DEFC05100F0EB3E /* BaseViewModel.swift in Sources */,
 				F91E5CD31DD30C4200E48AB7 /* MainController.swift in Sources */,
+				F95FF9281DF54E8400673C8F /* RoomController.swift in Sources */,
 				F9731F941DDEEC61009D4777 /* GameViewModel.swift in Sources */,
 				F93D75F71DEFC3A100F0EB3E /* BaseAnchorContorller.swift in Sources */,
 				F91E5CE31DD31D3200E48AB7 /* LiveController.swift in Sources */,
@@ -657,6 +700,7 @@
 				F97FB5DA1DDB0AEC0010CD1A /* AnchorModel.swift in Sources */,
 				F9B95D3B1DD5BE1E006CB7C0 /* UIColor-Extension.swift in Sources */,
 				F9DB64C61DD9B59B00BF32D3 /* CollectionPrettyCell.swift in Sources */,
+				F95FF92C1DF54F3500673C8F /* CustomNavigationController.swift in Sources */,
 				F982D3151DDD9A0F0066AB00 /* RecommendCycleView.swift in Sources */,
 				F93D75F31DEFB8CC00F0EB3E /* AmuseViewModel.swift in Sources */,
 				F97FB5D81DDAE9FF0010CD1A /* AnchorGroup.swift in Sources */,

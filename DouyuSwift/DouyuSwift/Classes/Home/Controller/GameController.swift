@@ -18,7 +18,7 @@ private let kGameViewH : CGFloat = 90
 private let kGameCellID = "kGameCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class GameController: UIViewController {
+class GameController: BaseController {
     
     fileprivate lazy var gameVM : GameViewModel = GameViewModel()
     
@@ -68,7 +68,10 @@ class GameController: UIViewController {
 }
 
 extension GameController {
-    fileprivate func setupUI() {
+    override func setupUI() {
+        contentView = collectionView
+        super.setupUI()
+        
         view.addSubview(collectionView)
         
         collectionView.addSubview(topHeaderView)
@@ -82,6 +85,8 @@ extension GameController {
             self.collectionView.reloadData()
             
             self.gameView.groups = Array(self.gameVM.games[0..<10])
+            
+            super.loadDataFinished()
         }
     }
 }
